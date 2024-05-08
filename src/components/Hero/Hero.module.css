@@ -1,0 +1,55 @@
+section {
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+section > div > h2 {
+  color: #481e14;
+  margin-bottom: 1rem;
+  font-size: 50px;
+  font-weight: 600;
+}
+
+section > div > h3 {
+  color: #401f71;
+  margin-bottom: 1rem;
+  font-size: 1.7rem;
+  font-weight: 400;
+}
+
+.hero__desc {
+  color: #003c43;
+  margin-bottom: 1rem;
+  max-width: 80ch;
+}
+
+section > div > Button {
+  margin-bottom: 2rem;
+}
+
+.hero__img {
+  max-width: 100%;
+  height: auto;
+  display: inline;
+}
+
+/* Medium Screen */
+@media (min-width: 768px) {
+}
+
+/* Large Screen */
+@media (min-width: 992px) {
+  section > div > h2 {
+    font-size: 60px;
+  }
+
+  section {
+    margin: 3rem 2rem;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+  }
+}

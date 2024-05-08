@@ -1,0 +1,59 @@
+.covidProv__main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.covidProv__title > h2 {
+  font-size: 40px;
+  color: #481e14;
+}
+
+.covidProv__title > p {
+  color: #401f71;
+  font-size: 20px;
+}
+
+.covidProv__content {
+  margin-top: 2rem;
+}
+
+table {
+  font-size: 8.5px;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+th {
+  color: #481e14;
+}
+
+th,
+td {
+  padding: 0 0.4rem;
+  border-color: #e4c59e;
+  border-style: solid;
+  border-width: 1px;
+}
+
+@media screen and (min-width: 768px) {
+  table {
+    font-size: 20px;
+  }
+  th,
+  td {
+    padding: 0.5rem 1rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  table {
+    font-size: 25px;
+  }
+  th,
+  td {
+    padding: 1rem 2rem;
+  }
+}

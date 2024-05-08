@@ -1,0 +1,77 @@
+.covidIndo__main {
+  padding: 2rem;
+  margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: #f8f9fa;
+}
+
+.covidIndo__title > h2 {
+  font-size: 40px;
+  color: #481e14;
+}
+
+.covidIndo__title > p {
+  color: #401f71;
+  font-size: 20px;
+}
+
+.covidIndo__container {
+  padding: 0 3rem;
+}
+
+.covidIndo__item {
+  background-color: #e4c59e;
+  margin: 2rem 0;
+  padding: 1rem 1.5rem;
+  border-radius: 15px;
+  box-shadow: -2px 8px 10px rgb(80, 80, 80);
+}
+
+.covidIndo__item__status {
+  font-size: 20px;
+  color: #481e14;
+  font-weight: 600;
+}
+
+.covidIndo__item__total {
+  font-size: 18px;
+}
+
+.covidIndo__main > p {
+  color: #401f71;
+}
+
+@media screen and (min-width: 768px) {
+  .covidIndo__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .covidIndo__item {
+    padding: 2rem 2rem;
+  }
+
+  .covidIndo__item > h1 {
+    font-size: 30px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .covidIndo__item {
+    padding: 2rem 4rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .covidIndo__item {
+    padding: 6rem 8rem;
+  }
+
+  .covidIndo__item > h1 {
+    font-size: 40px;
+  }
+}
