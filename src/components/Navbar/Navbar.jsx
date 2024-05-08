@@ -1,10 +1,11 @@
 import "./Navbar.module.css";
+
 const Navbar = () => {
   return (
     <nav>
       <div>
         <h1>
-          <a href="/">COVID MONITOR</a>
+          <a href="/">COVID MONIOR</a>
         </h1>
       </div>
       <div>

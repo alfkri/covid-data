@@ -1,4 +1,3 @@
-import data from "../../utils/constants/indonesia";
 import {
   covidIndo__main,
   covidIndo__title,
@@ -7,7 +6,8 @@ import {
   covidIndo__item__status,
   covidIndo__item__total,
 } from "./CovidIndo.module.css";
-const CovidIndo = () => {
+const CovidIndo = (props) => {
+  const { covid_indo, last_update } = props;
   const colors = ["#58A399", "#108ab2", "#ef476f"];
 
   return (
@@ -17,7 +17,7 @@ const CovidIndo = () => {
         <p>Data Covid Berdasarkan Indonesia</p>
       </div>
       <div className={covidIndo__container}>
-        {data.indonesia.map((item, index) => {
+        {covid_indo.map((item, index) => {
           const color = colors[index % colors.length];
           return (
             <div className={covidIndo__item} key={index}>
@@ -29,7 +29,7 @@ const CovidIndo = () => {
           );
         })}
       </div>
-      <p>Latest Update: {data.last_update}</p>
+      <p>Latest Update: {last_update}</p>
     </div>
   );
 };

@@ -1,5 +1,6 @@
 import "./Footer.module.css";
 import { footer__logo } from "./Footer.module.css";
+
 const Footer = () => {
   return (
     <footer>

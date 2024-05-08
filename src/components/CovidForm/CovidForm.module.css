@@ -1,0 +1,55 @@
+.covidForm__main {
+  padding: 2rem 2rem;
+  background-color: #f8f9fa;
+}
+
+.covidForm__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.covidForm__main > div {
+  padding: 2rem 0;
+}
+
+.covidForm__container > h2 {
+  font-size: 40px;
+  color: #481e14;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.covidForm__input {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: 400;
+  color: #401f71;
+}
+
+select {
+  margin-bottom: 1rem;
+  padding: 0.7rem 2rem;
+  border-radius: 10px;
+}
+
+input {
+  margin-bottom: 1rem;
+  padding: 0.7rem 2rem;
+  border-radius: 10px;
+}
+
+@media (min-width: 992px) {
+  .covidForm__main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5rem;
+  }
+
+  .covidForm__container {
+    width: 30%;
+  }
+}

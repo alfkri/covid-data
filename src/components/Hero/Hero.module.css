@@ -35,11 +35,9 @@ section > div > Button {
   display: inline;
 }
 
-/* Medium Screen */
 @media (min-width: 768px) {
 }
 
-/* Large Screen */
 @media (min-width: 992px) {
   section > div > h2 {
     font-size: 60px;

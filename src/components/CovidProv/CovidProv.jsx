@@ -1,10 +1,10 @@
-import data from "../../utils/constants/provinces";
 import {
   covidProv__main,
   covidProv__title,
   covidProv__content,
 } from "./CovidProv.module.css";
-const CovidProv = () => {
+const CovidProv = (props) => {
+  const { covid_prov } = props;
   return (
     <div className={covidProv__main} id="covidProv">
       <div className={covidProv__title}>
@@ -23,14 +23,14 @@ const CovidProv = () => {
             </tr>
           </thead>
           <tbody>
-            {data.provinces.map((data_prov) => {
+            {covid_prov.map((item, index) => {
               return (
-                <tr key={data_prov.kota}>
-                  <td>{data_prov.kota}</td>
-                  <td>{data_prov.kasus}</td>
-                  <td>{data_prov.sembuh}</td>
-                  <td>{data_prov.dirawat}</td>
-                  <td>{data_prov.meninggal}</td>
+                <tr key={index}>
+                  <td>{item.kota}</td>
+                  <td>{item.kasus}</td>
+                  <td>{item.sembuh}</td>
+                  <td>{item.dirawat}</td>
+                  <td>{item.meninggal}</td>
                 </tr>
               );
             })}
